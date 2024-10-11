@@ -29,6 +29,12 @@ p {
     line-height: 30px;
 }
 
+.links a {
+    font-size: 16px;
+    font-family: var(--default-font-family);
+    padding: 0 30px;
+}
+
 .hero {
     background-color: #f9f7fe;
     text-align: center;
@@ -55,7 +61,6 @@ p {
     background-color: var(--button-color);
     border-radius: 4px;
     color: white;
-    font-family: var(--default-font-family);
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
@@ -66,7 +71,8 @@ p {
     color: var(--button-color);
     border: 1px solid var(--button-color);
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 27px;
     padding: 18px 30px;
 }
