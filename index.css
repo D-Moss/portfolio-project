@@ -29,20 +29,7 @@ h2 {
 p {
 	font-size: 16px;
 	line-height: 30px;
-}
-
-.btn-branding {
-	background-color: var(--button-color);
-	border-radius: 4px;
-	color: white;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 27px;
-	padding: 18px 30px;
-}
-
-.btn-branding:hover {
-	background-color: var(--button-color);
+	font-weight: normal;
 }
 
 .content-container {
@@ -61,19 +48,34 @@ p {
 .content h2 {
 	font-size: 18px;
 	font-family: var(--default-font-family);
-	font-weight: bold;
 }
 
 .content h3 {
 	font-size: 24px;
 	font-family: var(--default-font-family);
-	font-weight: bold;
 	line-height: 1.5;
-	margin: 20px 0 0;
 }
 
 .content p {
 	font-size: 14px;
+}
+
+.btn-branding {
+	background-color: var(--button-color);
+	border-radius: 4px;
+	color: white;
+	font-size: 18px;
+	line-height: 27px;
+	padding: 15px 30px;
+}
+
+.btn-branding-outline {
+	color: var(--button-color);
+	border: 1px solid var(--button-color);
+	border-radius: 4px;
+	font-size: 18px;
+	line-break: 27px;
+	padding: 15px 30px;
 }
 
 @media (max-width: 900px) {
@@ -91,9 +93,6 @@ p {
 		padding: 0;
 		text-align: center;
 	}
-}
-
-@media (max-width: 900px) {
 	.content {
 		text-align: center;
 		padding: 0;
@@ -102,13 +101,12 @@ p {
 
 /*Index Page*/
 .hero {
-	background-color: #f9f7fe;
+	background-color: var(--secondary-color);
 	text-align: center;
 	padding: 160px 20px;
 }
 
 .hero p {
-	font-family: var(--default-font-family);
 	font-size: 36px;
 	font-weight: bold;
 	margin: 0;
@@ -116,25 +114,15 @@ p {
 }
 
 .hero h2 {
-	font-family: var(--default-font-family);
+	font-family: var(--heading-font-family);
 	font-size: 24px;
 	font-weight: normal;
 	line-height: 1.5;
 	color: #272142;
 }
 
-.btn-branding-outline {
-	color: var(--button-color);
-	border: 1px solid var(--button-color);
-	border-radius: 4px;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 27px;
-	padding: 18px 30px;
-}
-
 .project-description {
-	padding: 120px 60px 0;
+	padding: 120px 60px;
 }
 
 /*About Page*/
@@ -142,9 +130,3 @@ p {
 /*Work Page*/
 
 /*Not sure if used*/
-.links a {
-	font-size: 16px;
-	font-family: var(--default-font-family);
-	padding: 0 30px;
-	color: red;
-}
