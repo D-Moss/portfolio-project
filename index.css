@@ -60,6 +60,10 @@ h2 {
 	font-size: 64px;
 }
 
+h4 {
+	font-size: 48px;
+}
+
 p {
 	font-size: 16px;
 	line-height: 30px;
@@ -120,6 +124,9 @@ p {
 	h2 {
 		font-size: 44px;
 	}
+	h4 {
+		display: none;
+	}
 	.hero {
 		padding: 80px 20px;
 	}
@@ -137,8 +144,14 @@ p {
 	.logo {
 		display: none;
 	}
-	.navbar a {
-		text-align: center;
+	.contact-box p {
+		display: none;
+	}
+	.contact-box a {
+		font-size: 14px;
+	}
+	a.email-link {
+		font-size: 14px;
 	}
 }
 
@@ -168,8 +181,51 @@ p {
 	padding: 120px 60px;
 }
 
-/*About Page*/
+/*Footer*/
+footer {
+	margin: 60px 0;
+}
 
-/*Work Page*/
+.contact-box {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--secondary-color);
+	padding: 30px 120px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+}
 
-/*Not sure if used*/
+.contact-box p {
+	margin: 0;
+}
+
+.email {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
+.email-link {
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+}
+
+.email-link:hover {
+	color: var(--button-color);
+}
+
+.social-links a {
+	margin-bottom: 0 20px;
+	color: var(--button-color);
+	background-color: var(--secondary-color);
+	padding: 10px 14px;
+	font-size: 18px;
+	border-radius: 50%;
+	transition: all 150ms ease-in-out;
+}
+
+.social-links a:hover {
+	color: white;
+	background-color: var(--button-color);
+}
