@@ -60,7 +60,7 @@ h2 {
 	font-size: 64px;
 }
 
-h4 {
+h3 {
 	font-size: 48px;
 }
 
@@ -71,7 +71,7 @@ p {
 }
 
 .content-container {
-	padding: 160px 20px;
+	padding: 60px 20px;
 }
 
 .content {
@@ -124,11 +124,8 @@ p {
 	h2 {
 		font-size: 44px;
 	}
-	h4 {
+	h3 {
 		display: none;
-	}
-	.hero {
-		padding: 80px 20px;
 	}
 	.project-description {
 		padding: 0;
@@ -144,9 +141,6 @@ p {
 	.logo {
 		display: none;
 	}
-	.contact-box p {
-		display: none;
-	}
 	.contact-box a {
 		font-size: 14px;
 	}
@@ -159,7 +153,7 @@ p {
 .hero {
 	background-color: var(--secondary-color);
 	text-align: center;
-	padding: 160px 20px;
+	padding: 80px 20px;
 }
 
 .hero p {
