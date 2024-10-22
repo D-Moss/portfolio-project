@@ -147,6 +147,9 @@ p {
 	a.email-link {
 		font-size: 14px;
 	}
+	.row h3 {
+		text-align: center;
+	}
 }
 
 /*Index Page*/
@@ -173,6 +176,34 @@ p {
 
 .project-description {
 	padding: 120px 60px;
+}
+
+/*Contact Page*/
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+}
+
+.contact-form {
+	border-radius: 4px;
+	padding: 16px;
+	margin-bottom: 16px;
+	border: 1px solid grey;
+}
+
+.contact-form label,
+.contact-form div {
+	display: block;
+}
+
+input {
+	width: 100%;
+}
+
+textarea {
+	height: 200px;
+	width: 100%;
 }
 
 /*Footer*/
