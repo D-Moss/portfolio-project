@@ -1,6 +1,6 @@
 /*Multiple Pages*/
 :root {
-	--button-color: #6c63ff;
+	--branding-color: #6c63ff;
 	--secondary-color: #f9f7fe;
 	--heading-font-family: "Playfair Display", serif;
 	--default-font-family: "Poppins", sans-serif;
@@ -8,40 +8,6 @@
 
 body {
 	font-family: var(--default-font-family);
-}
-
-.logo {
-	max-height: 40px;
-}
-
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	padding: 20px 0;
-	margin: 0;
-}
-
-.navbar ul {
-	padding: 0;
-	margin: 0;
-}
-
-.navbar li {
-	display: inline;
-	list-style: none;
-	line-height: 42px;
-	margin-left: 15px;
-}
-
-.navbar li.active a,
-.navbar a:hover {
-	color: var(--button-color);
-}
-
-.navbar a {
-	text-decoration: none;
-	color: #272142;
-	transition: all 100ms ease-in-out;
 }
 
 h1, h2, h3,
@@ -65,9 +31,40 @@ h3 {
 }
 
 p {
+	font-weight: normal;
 	font-size: 16px;
 	line-height: 30px;
-	font-weight: normal;
+}
+
+nav {
+	padding: 20px 0;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline;
+	list-style: none;
+	line-height: 42px;
+	margin-left: 15px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #272142;
+	transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+	color: var(--branding-color);
+}
+
+.logo {
+	max-height: 40px;
 }
 
 .content-container {
@@ -90,8 +87,8 @@ p {
 
 .content h3 {
 	font-size: 24px;
-	font-family: var(--default-font-family);
 	line-height: 1.5;
+	font-family: var(--default-font-family);
 }
 
 .content p {
@@ -99,60 +96,97 @@ p {
 }
 
 .btn-branding {
-	background-color: var(--button-color);
+	background: var(--branding-color);
 	border-radius: 4px;
 	color: white;
+	text-decoration: none;
 	font-size: 18px;
 	line-height: 27px;
 	padding: 15px 30px;
 }
 
+.btn-branding:hover {
+	color: var(--branding-color);
+	border: 1px solid var(--branding-color);
+}
+
 .btn-branding-outline {
-	color: var(--button-color);
-	border: 1px solid var(--button-color);
+	color: var(--branding-color);
+	border: 1px solid var(--branding-color);
 	border-radius: 4px;
 	font-size: 18px;
-	line-break: 27px;
+	text-decoration: none;
+	line-height: 27px;
 	padding: 15px 30px;
+}
+
+.btn-branding-outline:hover {
+	background: var(--branding-color);
+	color: white;
+}
+
+/*Multiple Page Footer*/
+footer {
+	margin: 60px 0;
+}
+
+.contact-box {
+	background: var(--secondary-color);
+	padding: 30px 120px;
+	border-radius: 10px;
+}
+
+.contact-box p {
+	margin: 0;
+}
+
+.email-link {
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+}
+
+.email-link:hover {
+	color: var(--branding-color);
+}
+
+.social-links a {
+	margin: 0 20px;
+	color: var(--branding-color);
+	background: var(--secondary-color);
+	padding: 10px 14px;
+	border-radius: 50%;
+	font-size: 18px;
+	transition: all 100ms ease-in-out;
+}
+
+.social-links a:hover {
+	color: white;
+	background: var(--branding-color);
 }
 
 @media (max-width: 900px) {
 	h1 {
 		font-size: 44px;
-		line-height: 56px;
+		line-height: 48px;
 	}
 	h2 {
 		font-size: 44px;
 	}
 	h3 {
-		display: none;
-	}
-	.project-description {
-		padding: 0;
-		text-align: center;
-	}
-	.project-description p {
-		text-align: justify;
+		font-size: 26px;
 	}
 	.content {
 		text-align: center;
 		padding: 0;
 	}
-	.logo {
-		display: none;
-	}
-	.contact-box a {
-		font-size: 14px;
-	}
-	a.email-link {
-		font-size: 14px;
-	}
-	.row h3 {
+	.project-description {
+		padding: 0;
 		text-align: center;
 	}
 }
 
-/*Index Page*/
+/*Index*/
 .hero {
 	background-color: var(--secondary-color);
 	text-align: center;
@@ -176,81 +210,4 @@ p {
 
 .project-description {
 	padding: 120px 60px;
-}
-
-/*Contact Page*/
-.row {
-	display: flex;
-	flex-wrap: wrap;
-	font-weight: bold;
-}
-
-.contact-form {
-	border-radius: 4px;
-	padding: 16px;
-	margin-bottom: 16px;
-	border: 1px solid grey;
-}
-
-.contact-form label,
-.contact-form div {
-	display: block;
-}
-
-input {
-	width: 100%;
-}
-
-textarea {
-	height: 200px;
-	width: 100%;
-}
-
-/*Footer*/
-footer {
-	margin: 60px 0;
-}
-
-.contact-box {
-	display: flex;
-	justify-content: space-between;
-	background-color: var(--secondary-color);
-	padding: 30px 120px;
-	margin-bottom: 5px;
-	border-radius: 10px;
-}
-
-.contact-box p {
-	margin: 0;
-}
-
-.email {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 5px;
-}
-
-.email-link {
-	text-decoration: none;
-	color: black;
-	font-size: 24px;
-}
-
-.email-link:hover {
-	color: var(--button-color);
-}
-
-.social-links a {
-	margin-bottom: 0 20px;
-	color: var(--button-color);
-	background-color: var(--secondary-color);
-	padding: 10px 14px;
-	font-size: 18px;
-	border-radius: 50%;
-	transition: all 150ms ease-in-out;
-}
-
-.social-links a:hover {
-	color: white;
-	background-color: var(--button-color);
 }

@@ -9,14 +9,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/43778fb6fe.js" crossorigin="anonymous"></script>
-	<link href="index.css" rel="stylesheet">
-	<title>About</title>
+	<link rel="stylesheet" href="index.css">
+	<title>Front-end Developer | Diona Moss</title>
 </head>
 <body>
 	<div class="container">
-		<nav class="navbar">
-			<a href="index.html">
-				<img src="images/logo.png" class="logo" title="Homepage">
+		<nav class="d-flex justify-content-between">
+			<a href="index.html" title="Homepage">
+				<img src="images/logo.png" class="logo d-none d-md-block"
+            alt="Patricia Logo">
+				<img src="images/logo-small.jpg" class="logo d-block d-md-none" alt="Patricia Logo"/>
 			</a>
 			<ul>
 				<li>
@@ -42,41 +44,41 @@
 					<h1 class="mb-4">Hi I am Diona Moss</h1>
 					<h2 class="mb-4">Front-end developer based in the United States</h2>
 					<p class="mb-5">
-						For anyone who wants to start learning code, this workshop is very interesting. You will be challenged with different exercises, and everything is well explained, homework and deadlines are good for keep focus
+						I'm currently seeking new opportunities in front-end development. I'm open to work remotely and have flexible hours. I'm skilled in HTML, CSS and JavaScript.
 					</p>
-					<a href="" class="btn btn-branding">View my projects</a>
+					<a href="work.html" class="btn btn-branding">View my projects</a>
 				</div>
 			</div>
 
 			<div class="col-lg-6">
-				<img src="images/lady.png" class="img-fluid">
+				<img src="images/me.jpg" class="img-fluid">
 			</div>
 		</div>
-		<footer>
-			<div class="contact-box">
-				<div>
-					<h3>Work Inquiry</h3>
-					<p class="text-muted">Let's work together</p>
-				</div>
-				<div class="button">
-					<a href="" class="btn btn-branding">Contact me</a>
-				</div>
-			</div>
-			<div class="d-flex justify-content-center mb-5">
-				<a href="mailto:diona.moss@outlook.com" class="email-link">diona.moss@outlook.com</a>
-			</div>
-			<div class="social-links d-flex justify-content-center">
-				<a href="">
-					<i class="fa fa-instagram"></i>
-				</a>
-				<a href="">
-					<i class="fa fa-codepen"></i>
-				</a>
-				<a href="">
-					<i class="fa fa-github"></i>
-				</a>
-			</div>
-		</footer>
 	</div>
+	<footer class="container">
+		<div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+			<div>
+				<h3>Work Inquiry</h3>
+				<p class="text-muted">Let's work together</p>
+			</div>
+			<div class="button">
+				<a href="contact.html" class="btn btn-branding mt-3" title="Contact Patricia">Contact me</a>
+			</div>
+		</div>
+		<div class="d-flex justify-content-center mb-5">
+			<a href="mailto:diona.moss@outlook.com" class="email-link" title="Email Patricia">diona.moss@outlook.com</a>
+		</div>
+		<div class="social-links d-flex justify-content-center">
+			<a href="https://github.com/D-Moss" target="_blank" title="GitHub Profile">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://codepen.io/your-work" target="_blank"title="CodePen Profile">
+				<i class="fa fa-codepen"></i>
+			</a>
+		</div>
+		<p class="text-center mt-5">
+			This website was coded by Diona Moss and is open-sourced on <a href="https://github.com/D-Moss" target="_blank">GitHub</a>
+		</p>
+	</footer>
 </body>
 </html>
